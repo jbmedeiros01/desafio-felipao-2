@@ -1,4 +1,5 @@
-//função saldo positivo
+// Função saldo de vitórias
+
 function calcularSaldoDeVitorias (vitorias, derrotas) {
     let saldoDeVitorias = vitorias - derrotas
     return saldoDeVitorias
@@ -6,10 +7,9 @@ function calcularSaldoDeVitorias (vitorias, derrotas) {
 
 let saldoPositivo = calcularSaldoDeVitorias(130, 35)
 
-
 // Função nível no ranking
 
-function definirRanking(nivelNoRanking) {
+function definirNivelRanking(nivelNoRanking) {
 
     if(saldoPositivo <= 10) {
         nivelNoRanking = "Ferro"
@@ -36,7 +36,6 @@ function definirRanking(nivelNoRanking) {
 }
 
 
-let ranking = definirRanking()
+let ranking = definirNivelRanking()
 
-
-console.log("O jogador tem um saldo de " + saldoPositivo + " vitórias e está na faixa de ranking " + ranking + "!")
+console.log("O jogador tem um saldo de " + saldoPositivo + " vitórias e está no nível de ranking " + ranking + "!")
